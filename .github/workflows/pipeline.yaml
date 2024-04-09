@@ -11,6 +11,11 @@ on:
 jobs:
   deployment_pipeline:
     runs-on: ubuntu-20.04
+    env: 
+      MONGODB_URL: ${{ secrets.MONGODB_URL }}
+      TEST_MONGODB_URL: ${{ secrets.TEST_MONGODB_URL }}
+      PORT: ${{ secrets.PORT }}
+      SECRET: ${{ secrets.SECRET }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
