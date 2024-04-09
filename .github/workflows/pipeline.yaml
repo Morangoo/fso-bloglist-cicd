@@ -29,12 +29,14 @@ jobs:
         run: npm run test
       - name: Build
         run: cd frontend && npm run build && cp -r dist ../
+      - name: Start test environment
+        run: npm run start:test
       - name: e2e Tests
         uses: cypress-io/github-action@v6
         env:
           CYPRESS_BACKEND: http://localhost:3003/api
         with:
-          command: cd frontend && npm run test:e2e
-          start: npm run start:test
+          working-directory: frontend
+          command: npm run test:e2e
           wait-on: http://localhost:3003
         
