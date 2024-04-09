@@ -1,0 +1,13 @@
+POST http://127.0.0.1:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRvbWFzIiwiaWQiOiI2NWI4MGQ2N2NkNzAxZmIyZGNmM2U0YTgiLCJpYXQiOjE3MDczMzMyMzgsImV4cCI6MTcwNzMzNjgzOH0.mODqu2ceVbdVRAVhVkWTGL0zdG3fy_cOYGuGgWYk3yQ
+
+{
+    "title": "tomass",
+    "author": "token-testt",
+    "url": "google.comm"
+}
+
+###
+DELETE http://127.0.0.1:3003/api/blogs/65c0c89906a15582706ffa71
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRvbWFzIiwiaWQiOiI2NWI4MGQ2N2NkNzAxZmIyZGNmM2U0YTgiLCJpYXQiOjE3MDcxMzI0MTMsImV4cCI6MTcwNzEzNjAxM30.p4cnGbS3IZa7NuYf8wLhxG0sW57ro7H_DPDr5csngwg
